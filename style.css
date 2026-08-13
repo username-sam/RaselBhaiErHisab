@@ -7,21 +7,13 @@
 body{
     height: 100vh;
     width: 100vw;
-    background: rgb(100, 98, 98);
+    background: linear-gradient(to bottom,#4b6938,#7278cf);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-h1{
-    padding: 1rem;
-    font-size: 3rem;
-    background: linear-gradient(to right,#69b838,#3e9a9c,#34d78b);
-    border: none;
-    background-clip: text;
-    color: transparent;
-}
 
 table{
     border-collapse: collapse;
@@ -29,7 +21,33 @@ table{
 }
 
 th,td{
-    border: 2px solid black;
+    border: 5px solid rgb(97, 2, 2);
     padding: 10px 20px;
     text-align: center;
+}
+
+.btnBox{
+    display: flex;
+    justify-content: center;
+    margin: 60px;
+   
+}
+button{   
+    font-size: 1.5rem;
+    border-radius: 10px;
+    background-color: #4b6938;
+    color: white;
+    border: none;
+    cursor: pointer;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    font-weight: 900;
+    text-shadow: 3px 3px 2px rgba(109, 62, 62, 0.3);
+    display: none;
+}
+
+button:active{
+    transform: scale(0.7);
+    transition: all 0.1s ease-in-out;
 }
